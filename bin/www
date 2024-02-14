@@ -10,9 +10,8 @@ var http = require('http');
 
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://127.0.0.1:27017/E-COMMERCE-LIVE')
+mongoose.connect('mongodb+srv://harsh9925840:harsh123@harsh.uabyvkf.mongodb.net/E-COMMERCE-LIVE')
   .then(() => console.log('Connected!'));
-
 
 var port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
